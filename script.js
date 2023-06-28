@@ -20,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
   guess = Number(document.querySelector('.guess').value);
   if (!guess) {
     document.querySelector('.message').textContent = '⛔️No number!';
+    document.querySelector('body').style.backgroundColor = 'blue';
   } else if (guess === number) {
     document.querySelector('.message').textContent = '🎉Correct number!';
     document.querySelector('.highscore').textContent = score;
